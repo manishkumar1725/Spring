@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="info" class="com.manish.q2.Question">
+
+		<constructor-arg index="0" value="1" />
+		<constructor-arg index="1" value="WHAT IS MY NAME?" />
+		<constructor-arg>  
+		<list>  
+        <value>MANISH</value>  
+        <value>KUMAR</value>  
+        <value>ANYTHING</value>  
+        </list>  
+        </constructor-arg>  
+ </bean> 
+ 
+ <bean id="info_1" class="com.manish.q2.QuestionSet">
+
+		<constructor-arg index="0" value="1" />
+		<constructor-arg index="1" value="FROM WHERE YOU ARE?" />
+		<constructor-arg>  
+		<set>  
+        <value>RANCHI</value>  
+        <value>KOLKATA</value>  
+        <value>DELHI</value>  
+        </set>  
+        </constructor-arg>  
+ </bean> 
+ 
+  <bean id="info_2" class="com.manish.q2.QuestionMap">
+
+		<constructor-arg index="0" value="1" />
+		<constructor-arg index="1" value="WHAT DO YOU KNOW?" />
+		<constructor-arg>  
+		<map>  
+        <entry key="1" value="NOTHING"/>  
+        <entry key="2" value="SOMETHING"/>  
+        <entry key="3" value="ANYTHING"/>  
+        </map>
+        </constructor-arg>  
+ </bean>
+ 
+ </beans>

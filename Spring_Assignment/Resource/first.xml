@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" 
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="address" class="com.manish.q1.Address">
+
+		<constructor-arg index="0" value="8" />
+		<constructor-arg index="1" value="HALDIA" />
+		<constructor-arg index="2" value="WEST BENGAL" />
+		<constructor-arg index="3" value="721657" />
+		<constructor-arg index="4" value="INDIA" /> 
+
+
+		<!-- <property name="street" value="5" /> 
+		<property name="city" value="BANGALORE" /> 
+		<property name="state" value="KARNATAKA" /> 
+		<property name="zip" value="829119" /> 
+		<property name="country" value="INDIA" /> -->
+			
+	</bean>
+
+	<bean id="info" class="com.manish.q1.Customer">
+
+		<constructor-arg index="0" value="500" />
+		<constructor-arg index="1" value="RISHAV" />
+		<constructor-arg index="2" value="7063744670" />
+		<constructor-arg ref="address">
+		</constructor-arg> 
+
+
+
+		<!-- <property name="customerId" value="100" />
+		<property name="customerName" value="MANISH" /> 
+	    <property name="customerContact" value="7001322721" /> 
+		<property name="customerAddress" ref="address" />
+ -->
+
+	</bean>
+
+
+
+
+
+
+
+
+</beans>
