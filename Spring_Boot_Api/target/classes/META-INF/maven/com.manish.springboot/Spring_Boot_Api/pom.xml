@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.manish.springboot</groupId>
+  <artifactId>Spring_Boot_Api</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+
+ <!--  INHERITING ALL THE MAVEN CONFIGURATION TO CHILD PROJECT FROM PARENT PROJECT SPRING-BOOT-STARTER-PARENT  -->
+ <!--  It told the maven what version of jar we have to download -->
+  
+   <parent>
+    <groupId>org.springframework.boot</groupId>     
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.1.1.RELEASE</version>
+   </parent>
+ 
+ 
+ <!-- This dependency tells us what are the jar we have to download   -->
+ <!-- These pre-set combination of jar which work well together is called bill of materials -->
+   
+ <dependencies>
+  
+    <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    
+    <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+	</dependency>
+
+ </dependencies>
+ 
+
+
+ </project> 
